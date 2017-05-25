@@ -75,5 +75,4 @@ with vgg_graph.as_default():
 
         for x_test_batch in batches:
             softmax_array = sess.run(softmax_tensor, feed_dict={input_x: x_test_batch, dropout_keep_prob: 1.0})
-
             print(softmax_array.shape)
